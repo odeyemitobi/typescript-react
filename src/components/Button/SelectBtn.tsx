@@ -1,10 +1,10 @@
 import React from "react";
 
-type SignupBtnProps = {
+type SelectBtnProps = {
   children: React.ReactNode;
 };
 
-function SignupBtn(props: SignupBtnProps) {
+function SelectBtn(props: SelectBtnProps) {
   return (
     <button
       type="button"
@@ -15,4 +15,4 @@ function SignupBtn(props: SignupBtnProps) {
   );
 }
 
-export default SignupBtn;
+export default SelectBtn;
