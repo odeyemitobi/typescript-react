@@ -5,6 +5,9 @@ import Lap from "../../assets/img/Herolaptopimg.png";
 import Plan from "../../assets/img/Plan1.png";
 import Standard from "../../assets/img/Standard.png";
 import Premium from "../../assets/img/Premium.png";
+import Continent from "../../assets/img/Hugeglobal.png";
+import Person1 from "../../assets/person/Person1.png";
+import Sponsors from "../../assets/img/Sponsored.png";
 import StartedBtn from "../../components/Button/StartedBtn";
 import { FaUser, FaCheckCircle } from "react-icons/fa";
 import { FaLocationDot, FaServer, FaCheck } from "react-icons/fa6";
@@ -68,7 +71,7 @@ function Home() {
           <img className="w-full" src={Lap} alt="" />
         </div>
         <div className="w-full flex flex-col md:mt-28 mt-6 items-end">
-          <div className="w-[80%] my-10">
+          <div className="md:w-[80%] my-10">
             <h1 className="font-medium text-[40px] leading-[50px]">
               We Provide Many <br />
               Features You Can Use
@@ -118,8 +121,8 @@ function Home() {
             cheerfully.
           </p>
         </div>
-        <div className="w-full grid md:grid-cols-3 items-center justify-center text-center md:my-28 my-8">
-          <div className="w-[90%] border-2 rounded-lg items-center justify-center">
+        <div className="w-full grid md:grid-cols-3 items-center md:justify-center text-center md:my-28 my-8">
+          <div className="md:w-[90%] w-full border-2 rounded-lg items-center justify-center md:mb-0 mb-8">
             <div>
               <img
                 className="mx-auto md:h-[16rem] md:mt-24 mt-6"
@@ -128,7 +131,7 @@ function Home() {
               />
             </div>
             <p className="text-[30px] md:my-8 my-4 font-medium">Free Plan</p>
-            <div className="text-center mb-56">
+            <div className="md:ml-32 ml-14 md:mb-56">
               <div className="flex gap-5 my-4 items-center">
                 <FaCheck color="#2FAB73" />
                 <p>Unlimited Bandwitch</p>
@@ -153,50 +156,16 @@ function Home() {
               <SelectBtn>Select</SelectBtn>
             </div>
           </div>
-          <div className="w-[90%] border-2 rounded-lg place-items-center justify-center">
-            <img
-              className="mx-auto md:h-[16rem] md:mt-24 mt-6"
-              src={Standard}
-              alt=""
-            />
+          <div className="md:w-[90%] w-full border-2 rounded-lg items-center justify-center md:mb-0 mb-8">
+            <div>
+              <img
+                className="mx-auto md:h-[16rem] md:mt-24 mt-6"
+                src={Standard}
+                alt=""
+              />
+            </div>
             <p className="text-[30px] md:my-8 my-4 font-medium">Free Plan</p>
-            <div className="w-full flex flex-col items-center mb-56">
-              <div className="flex gap-5 my-4 items-center">
-                <FaCheck color="#2FAB73" />
-                <p>Unlimited Bandwitch</p>
-              </div>
-              <div className="flex gap-5 my-4 items-center">
-                <FaCheck color="#2FAB73" />
-                <p>Encrypted Connection</p>
-              </div>
-              <div className="flex gap-5 my-4 items-center">
-                <FaCheck color="#2FAB73" />
-                <p>Yes Traffic Logs</p>
-              </div>
-              <div className="flex gap-5 my-4 items-center">
-                <FaCheck color="#2FAB73" />
-                <p>Works on All Devices</p>
-              </div>
-              <div className="flex gap-5 items-center">
-                <FaCheck color="#2FAB73" />
-                <p>Connect Anyware</p>
-              </div>
-            </div>
-            <div className="mb-5">
-              <p>$9 / mo</p>
-            </div>
-            <div className="mb-10">
-              <SelectBtn>Select</SelectBtn>
-            </div>
-          </div>
-          <div className="w-[90%] border-2 rounded-lg place-items-center justify-center">
-            <img
-              className="mx-auto md:h-[16rem] md:mt-24 mt-6"
-              src={Premium}
-              alt=""
-            />
-            <p className="text-[30px] md:my-8 my-4 font-medium">Free Plan</p>
-            <div className="w-full flex flex-col items-center mb-56">
+            <div className="md:ml-32 ml-14 md:mb-56">
               <div className="flex gap-5 my-4 items-center">
                 <FaCheck color="#2FAB73" />
                 <p>Unlimited Bandwitch</p>
@@ -213,21 +182,114 @@ function Home() {
                 <FaCheck color="#2FAB73" />
                 <p>Works on All Devices</p>
               </div>
-              <div className="flex gap-5 my-4 items-center">
-                <FaCheck color="#2FAB73" />
-                <p>Connect Anyware</p>
-              </div>
-              <div className="flex gap-5 my-4 items-center">
-                <FaCheck color="#2FAB73" />
-                <p>Get New Features</p>
-              </div>
             </div>
             <div className="mb-5">
-              <p>$12 / mo</p>
+              <p>Free</p>
             </div>
             <div className="mb-10">
               <SelectBtn>Select</SelectBtn>
             </div>
+          </div>
+          <div className="md:w-[90%] w-full border-2 rounded-lg items-center justify-center md:mb-0 mb-8">
+            <div>
+              <img
+                className="mx-auto md:h-[16rem] md:mt-24 mt-6"
+                src={Premium}
+                alt=""
+              />
+            </div>
+            <p className="text-[30px] md:my-8 my-4 font-medium">Free Plan</p>
+            <div className="md:ml-32 ml-14 md:mb-56">
+              <div className="flex gap-5 my-4 items-center">
+                <FaCheck color="#2FAB73" />
+                <p>Unlimited Bandwitch</p>
+              </div>
+              <div className="flex gap-5 my-4 items-center">
+                <FaCheck color="#2FAB73" />
+                <p>Encrypted Connection</p>
+              </div>
+              <div className="flex gap-5 my-4 items-center">
+                <FaCheck color="#2FAB73" />
+                <p>No Traffic Logs</p>
+              </div>
+              <div className="flex gap-5 my-4 items-center">
+                <FaCheck color="#2FAB73" />
+                <p>Works on All Devices</p>
+              </div>
+            </div>
+            <div className="mb-5">
+              <p>Free</p>
+            </div>
+            <div className="mb-10">
+              <SelectBtn>Select</SelectBtn>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full">
+        <div className="text-center">
+          <h1 className="md:text-[2rem] text-[1.7rem] font-medium mb-5">
+            Huge Global Network <br />
+            of Fast VPN
+          </h1>
+          <p className="md:text-base text-[13px] text-[#4F5665]">
+            See <b>LaslesVPN</b> everywhere to make it easier for you when you
+            move <br />
+            locations.
+          </p>
+        </div>
+        <div className="md:my-32 my-14">
+          <img className="mx-auto" src={Continent} alt="World Map" />
+        </div>
+        <div className="md:my-24 my-14">
+          <img className="mx-auto" src={Sponsors} alt="Sponsors" />
+        </div>
+      </div>
+
+      <div className="w-full md:my-24 my-8">
+        <div className="text-center">
+          <h1 className="md:text-[40px] text-[1.7rem] font-medium md:mb-5 mb-3">
+            Trusted by Thousands of <br /> Happy Customer
+          </h1>
+          <p className="md:text-[20px] text-[13px] text-[#4F5665]">
+            These are the stories of our customers who have joined us with great{" "}
+            <br />
+            pleasure when using this crazy feature.
+          </p>
+        </div>
+        <div className="w-full grid grid-cols-3 items-center justify-center">
+          <div className="w-[90%] border-2 rounded-xl mx-5 py-5">
+            <div className="w-full flex items-center">
+              <div className="w-full">
+                <img className="pl-6" src={Person1} alt="" />
+              </div>
+              <div className="">
+                <h1>Viezh Robert</h1>
+                <p>Warsaw, Poland</p>
+              </div>
+              <div className="">
+                <p>4.5</p>
+                <p>star</p>
+              </div>
+            </div>
+            <p>
+              “Wow... I am very happy to use this VPN, it turned out to be more
+              than my expectations and so far there have been no problems.
+              LaslesVPN always the best”.
+            </p>
+          </div>
+          <div className="w-[90%] border-2 rounded-xl mx-5 py-5">
+            <div>
+              <img className="pl-6" src={Person1} alt="" />
+            </div>
+            <p></p>
+          </div>
+          <div className="w-[90%] border-2 rounded-xl mx-5 py-5">
+            <div>
+              <img className="pl-6" src={Person1} alt="" />
+            </div>
+            <p></p>
           </div>
         </div>
       </div>
