@@ -8,9 +8,17 @@ import Premium from "../../assets/img/Premium.png";
 import Continent from "../../assets/img/Hugeglobal.png";
 import Person1 from "../../assets/person/Person1.png";
 import Sponsors from "../../assets/img/Sponsored.png";
+import Scroll from "../../assets/img/scroll.png";
 import StartedBtn from "../../components/Button/StartedBtn";
 import { FaUser, FaCheckCircle } from "react-icons/fa";
-import { FaLocationDot, FaServer, FaCheck } from "react-icons/fa6";
+import {
+  FaLocationDot,
+  FaServer,
+  FaCheck,
+  FaStar,
+  FaArrowLeft,
+  FaArrowRight,
+} from "react-icons/fa6";
 import SelectBtn from "../../components/Button/SelectBtn";
 
 function Home() {
@@ -258,38 +266,79 @@ function Home() {
             pleasure when using this crazy feature.
           </p>
         </div>
-        <div className="w-full grid grid-cols-3 items-center justify-center">
-          <div className="w-[90%] border-2 rounded-xl mx-5 py-5">
-            <div className="w-full flex items-center">
+        <div className="w-full grid grid-cols-3 items-center justify-center md:my-20 my-5">
+          <div className="w-[80%] border-2 rounded-xl px-5 py-5">
+            <div className="w-full flex items-center mb-5">
+              <div className="pr-5">
+                <img className="w-[5rem]" src={Person1} alt="" />
+              </div>
               <div className="w-full">
-                <img className="pl-6" src={Person1} alt="" />
+                <h1 className="font-medium text-xl">Viezh Robert</h1>
+                <p className="text-[15px] text-[#4F5665]">Warsaw, Poland</p>
               </div>
-              <div className="">
-                <h1>Viezh Robert</h1>
-                <p>Warsaw, Poland</p>
-              </div>
-              <div className="">
+              <div className="flex items-center justify-center gap-2">
                 <p>4.5</p>
-                <p>star</p>
+                <FaStar color="#FEA250" size={13} />
               </div>
             </div>
-            <p>
+            <p className="w-[90%]">
               “Wow... I am very happy to use this VPN, it turned out to be more
               than my expectations and so far there have been no problems.
               LaslesVPN always the best”.
             </p>
           </div>
-          <div className="w-[90%] border-2 rounded-xl mx-5 py-5">
-            <div>
-              <img className="pl-6" src={Person1} alt="" />
+          <div className="w-[80%] border-2 rounded-xl px-5 py-5">
+            <div className="w-full flex items-center mb-5">
+              <div className="pr-5">
+                <img className="w-[5rem]" src={Person1} alt="" />
+              </div>
+              <div className="w-full">
+                <h1 className="font-medium text-xl">Viezh Robert</h1>
+                <p className="text-[15px] text-[#4F5665]">Warsaw, Poland</p>
+              </div>
+              <div className="flex items-center justify-center gap-2">
+                <p>4.5</p>
+                <FaStar color="#FEA250" size={13} />
+              </div>
             </div>
-            <p></p>
+            <p className="w-[90%]">
+              “Wow... I am very happy to use this VPN, it turned out to be more
+              than my expectations and so far there have been no problems.
+              LaslesVPN always the best”.
+            </p>
           </div>
-          <div className="w-[90%] border-2 rounded-xl mx-5 py-5">
-            <div>
-              <img className="pl-6" src={Person1} alt="" />
+          <div className="w-[80%] border-2 rounded-xl px-5 py-5">
+            <div className="w-full flex items-center mb-5">
+              <div className="pr-5">
+                <img className="w-[5rem]" src={Person1} alt="" />
+              </div>
+              <div className="w-full">
+                <h1 className="font-medium text-xl">Viezh Robert</h1>
+                <p className="text-[15px] text-[#4F5665]">Warsaw, Poland</p>
+              </div>
+              <div className="flex items-center justify-center gap-2">
+                <p>4.5</p>
+                <FaStar color="#FEA250" size={13} />
+              </div>
             </div>
-            <p></p>
+            <p className="w-[90%]">
+              “Wow... I am very happy to use this VPN, it turned out to be more
+              than my expectations and so far there have been no problems.
+              LaslesVPN always the best”.
+            </p>
+          </div>
+        </div>
+        <div className="w-full md:mt-20 mt-4 flex justify-between items-center">
+          <div className="">
+            <img className="" src={Scroll} alt="" />
+          </div>
+          <div className="flex gap-3">
+            <div className="border-2 border-[#F53838] hover:bg-[#F53838] hover:text-white text-[#F53838] cursor-pointer rounded-full p-4">
+              <FaArrowLeft className="" size={25} />
+            </div>
+            <div className="border-2 border-[#F53838] hover:bg-[#F53838] hover:text-white text-[#F53838] cursor-pointer rounded-full p-4">
+              <FaArrowRight size={25} />
+            </div>
           </div>
         </div>
       </div>
