@@ -158,7 +158,7 @@ function Home() {
               </div>
             </div>
             <div className="mb-5">
-              <p>Free</p>
+              <p className="font-medium text-[20px]">Free</p>
             </div>
             <div className="mb-10">
               <SelectBtn>Select</SelectBtn>
@@ -172,7 +172,9 @@ function Home() {
                 alt=""
               />
             </div>
-            <p className="text-[30px] md:my-8 my-4 font-medium">Free Plan</p>
+            <p className="text-[30px] md:my-8 my-4 font-medium">
+              Standard Plan
+            </p>
             <div className="md:ml-32 ml-14 md:mb-56">
               <div className="flex gap-5 my-4 items-center">
                 <FaCheck color="#2FAB73" />
@@ -192,7 +194,9 @@ function Home() {
               </div>
             </div>
             <div className="mb-5">
-              <p>Free</p>
+              <p className="text-[20px]">
+                <b>$9</b> / mo
+              </p>
             </div>
             <div className="mb-10">
               <SelectBtn>Select</SelectBtn>
@@ -206,7 +210,7 @@ function Home() {
                 alt=""
               />
             </div>
-            <p className="text-[30px] md:my-8 my-4 font-medium">Free Plan</p>
+            <p className="text-[30px] md:my-8 my-4 font-medium">Premium Plan</p>
             <div className="md:ml-32 ml-14 md:mb-56">
               <div className="flex gap-5 my-4 items-center">
                 <FaCheck color="#2FAB73" />
@@ -226,7 +230,9 @@ function Home() {
               </div>
             </div>
             <div className="mb-5">
-              <p>Free</p>
+              <p className="text-[20px]">
+                <b>$12</b> / mo
+              </p>
             </div>
             <div className="mb-10">
               <SelectBtn>Select</SelectBtn>
@@ -237,11 +243,11 @@ function Home() {
 
       <div className="w-full">
         <div className="text-center">
-          <h1 className="md:text-[2rem] text-[1.7rem] font-medium mb-5">
+          <h1 className="md:text-[40px] text-[1.7rem] font-medium mb-5">
             Huge Global Network <br />
             of Fast VPN
           </h1>
-          <p className="md:text-base text-[13px] text-[#4F5665]">
+          <p className="md:text-[20px] text-[13px] text-[#4F5665]">
             See <b>LaslesVPN</b> everywhere to make it easier for you when you
             move <br />
             locations.
@@ -266,8 +272,8 @@ function Home() {
             pleasure when using this crazy feature.
           </p>
         </div>
-        <div className="w-full grid grid-cols-3 items-center justify-center md:my-20 my-5">
-          <div className="w-[80%] border-2 rounded-xl px-5 py-5">
+        <div className="w-full grid md:grid-cols-3 items-center justify-center md:my-20 my-5">
+          <div className="w- full md:w-[80%] border-2 rounded-xl px-5 py-5 mt-10 md:mt-0">
             <div className="w-full flex items-center mb-5">
               <div className="pr-5">
                 <img className="w-[5rem]" src={Person1} alt="" />
@@ -287,7 +293,7 @@ function Home() {
               LaslesVPN always the best”.
             </p>
           </div>
-          <div className="w-[80%] border-2 rounded-xl px-5 py-5">
+          <div className="w-full md:w-[80%] border-2 rounded-xl px-5 py-5 mt-10 md:mt-0">
             <div className="w-full flex items-center mb-5">
               <div className="pr-5">
                 <img className="w-[5rem]" src={Person1} alt="" />
@@ -307,7 +313,7 @@ function Home() {
               LaslesVPN always the best”.
             </p>
           </div>
-          <div className="w-[80%] border-2 rounded-xl px-5 py-5">
+          <div className="w-full md:w-[80%] border-2 rounded-xl px-5 py-5 mt-10 md:mt-0">
             <div className="w-full flex items-center mb-5">
               <div className="pr-5">
                 <img className="w-[5rem]" src={Person1} alt="" />
